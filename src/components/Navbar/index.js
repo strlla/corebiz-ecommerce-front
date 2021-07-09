@@ -4,21 +4,21 @@ import './style.css';
 
 const Navbar = () => {
     return (
-        <header class="header">
-            <div class="sidebar-container">
-                <img src="./icons/hamburger-menu.svg"/>
+        <header className="header">
+            <div className="sidebar-container">
+                <img src="./icons/hamburger-menu.svg" alt="icon-menu"/>
             </div>
-            <div class="logo-container">
+            <div className="logo-container">
                 <h2>corebiz<span>.</span></h2>
             </div>
-            <div class="search-container">
+            <div className="search-container">
                 <Search/>
             </div>
-            <div class="user-container">
-                <img src="./icons/user.svg"/>
+            <div className="user-container">
+                <img src="./icons/user.svg" alt="icon-user"/>
                 <p>Mi cuenta</p>
             </div>
-            <div class="cart-container">
+            <div className="cart-container">
                 <CartWidget/>
             </div>
 

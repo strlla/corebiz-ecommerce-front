@@ -2,8 +2,8 @@ import './style.css';
 
 const Search = () => {
     return (
-        <div class="search">
-            <img src="./icons/search.svg"/>
+        <div className="search">
+            <img src="./icons/search.svg" alt="icon-search"/>
             <input type="text" placeholder="¿Qué estás buscando?"/>   
         </div>
     )
