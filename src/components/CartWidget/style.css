@@ -1,0 +1,17 @@
+.cart-icon{
+    width: 24px;
+}
+
+.cart-circle{
+    background-color: #F8475F; 
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFF;
+}
+@media only screen and (min-width: 992px) {
+
+}

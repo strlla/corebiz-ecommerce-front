@@ -1,10 +1,11 @@
 import Search from '../Search';
+import CartWidget from '../CartWidget';
 import './style.css';
 
 const Navbar = () => {
     return (
         <header class="header">
-            <div class="sidebar-container">logo</div>
+            <div class="sidebar-container">hamburger</div>
             <div class="logo-container">
                 <h2>corebiz<span>.</span></h2>
             </div>
@@ -16,7 +17,7 @@ const Navbar = () => {
                 <p>Mi cuenta</p>
             </div>
             <div class="cart-container">
-                <div>CartWidget</div>
+                <CartWidget/>
             </div>
 
         </header>
