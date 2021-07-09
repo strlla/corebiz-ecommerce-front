@@ -1,0 +1,36 @@
+.search{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.search img{
+    width: 24px;
+    position: absolute;
+    right: 0;
+}
+
+.search input {
+    width: inherit;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #7A7A7A;
+    font-family: 'Nunito';
+    transition: all 0.2s ease-in;
+}
+
+.search input::placeholder{
+    color: #7A7A7A;
+}
+
+.search input:focus{
+    border-bottom: 1.5px solid #7A7A7A;
+}
+.search img{
+    width: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+    .search img{
+        width: 18px;
+    }
+}

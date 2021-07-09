@@ -1,3 +1,4 @@
+import Search from '../Search';
 import './style.css';
 
 const Navbar = () => {
@@ -8,7 +9,7 @@ const Navbar = () => {
                 <h2>corebiz<span>.</span></h2>
             </div>
             <div class="search-container">
-                <div>Search</div>
+                <Search/>
             </div>
             <div class="user-container">
                 <img src="./icons/user.svg"/>
