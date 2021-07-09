@@ -9,7 +9,7 @@ const ItemList = ({items, title}) => {
                 <hr/>
             </div>
             <div className="list-container">
-                <Item item={{imageUrl: "https://corebiz-test.herokuapp.com/images/product-1.png"}}/>
+                {items.length > 0 ? items.map(item => <Item key={item.productId} item={item}/>) : <span>Cargando...</span>}
             </div>    
         </section>
     )
