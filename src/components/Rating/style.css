@@ -1,0 +1,9 @@
+.rating-container{
+    display: flex;
+    column-gap: 4px;
+    justify-content: center;
+}
+
+.rating-container img {
+    width: 18px;
+}

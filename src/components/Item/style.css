@@ -7,10 +7,30 @@
     padding: 0 0 14px;
     background-color: #FFF;
     transition: all 0.1s ease-in;
+    position: relative;
+    overflow: hidden;
 }
 
 .item:hover{
     background-color:#E6E8EA;
+}
+
+.badge, .badge-text{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.badge{
+    background-color: #F8475F;
+    right: -50px;
+    top: -50px;
+    -webkit-transform: rotate(-45deg);
+}
+.badge-text{
+    right: -24px;
+    top: 12px;
+    font-size: 12px;
+    color: #FFF;
 }
 
 .item button{
@@ -22,12 +42,13 @@
     font-size: 16px;
     padding: 14px 0;
     border-radius: 5px;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
 }
 
 .item button:hover{
     transform: scale(1.05);
 }
+
 .item button:active{
     transform: scale(1);
 }
@@ -37,7 +58,6 @@
     flex-direction: column;
     row-gap: 6px;
 }
-
 
 .item-info h4, .item-price-sec{
     font-weight: 600;
