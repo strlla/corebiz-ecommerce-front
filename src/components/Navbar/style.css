@@ -20,6 +20,11 @@
     grid-area: sidebar;
 }
 
+.sidebar-container img{
+    width: 30px;
+    vertical-align: -webkit-baseline-middle;
+}
+
 .user-container{
     display: none;
     grid-area: user;

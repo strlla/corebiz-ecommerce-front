@@ -5,7 +5,9 @@ import './style.css';
 const Navbar = () => {
     return (
         <header class="header">
-            <div class="sidebar-container">hamburger</div>
+            <div class="sidebar-container">
+                <img src="./icons/hamburger-menu.svg"/>
+            </div>
             <div class="logo-container">
                 <h2>corebiz<span>.</span></h2>
             </div>
