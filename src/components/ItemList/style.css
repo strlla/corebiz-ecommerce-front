@@ -1,0 +1,41 @@
+.item-list{
+    margin: 20px auto;
+}
+
+.list-header, .list-container{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+.list-header{
+    row-gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-header h3 {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+}
+
+.list-header hr{
+    border: 2px solid #C0C0C0;
+    width: 40px;
+    margin: 0;
+}
+
+.list-container{
+    justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .item-list{
+        margin: 44px auto;
+    }
+    .list-header, .list-container{
+        width: 70%;
+    }
+    
+}
