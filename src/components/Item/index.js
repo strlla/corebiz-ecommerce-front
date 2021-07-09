@@ -1,7 +1,14 @@
+import {useCartContext} from '../../contexts/CartContext';
 import Rating from '../Rating';
 import './style.css';
 
 const Item = ({item}) => {
+    const {addItem} = useCartContext();
+
+    const handleClick = () => {
+        addItem(item);
+    }
+    
     return (
         <article className="item">
             <img src={item.imageUrl}/>
@@ -12,7 +19,7 @@ const Item = ({item}) => {
                 <p className="item-price">por $259.90</p>
                 <p className="item-price-sec">ou em 9x de R$ 28,87</p>
             </div>
-            <button>Comprar</button>
+            <button onClick={handleClick}>Comprar</button>
             {item.listPrice && <>
                 <div className="badge"></div>
                 <span className="badge-text">OFF</span>
