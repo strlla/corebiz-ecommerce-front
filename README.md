@@ -19,8 +19,8 @@ Front de ecommerce desarrollada por Estrella Portocarrero. El sitio es responsiv
 ![demo-mobile](public/demo/Corebiz-mobile.gif)
 
 ##  Características
-Se implementó el carrito de compras utilizando **React Context** y **localstorage** del navegador.
+Se implementó el carrito de compras utilizando **React Context** y **LocalStorage** para su preservación.
 
 ## Dependencias externas
 
- - **Axios:** para realizar peticiones HTTP 
+ - **Axios:** para realizar peticiones HTTP.
