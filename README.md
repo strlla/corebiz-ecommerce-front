@@ -9,7 +9,7 @@ Front de ecommerce desarrollada por Estrella Portocarrero. El sitio es responsiv
     
     npm start
     
-	Open your browser in https://localhost:3000
+    Open your browser in https://localhost:3000
 ```
 
 ## Demo desktop
@@ -19,7 +19,7 @@ Front de ecommerce desarrollada por Estrella Portocarrero. El sitio es responsiv
 ![demo-mobile](public/demo/Corebiz-mobile.gif)
 
 ##  Características
-Se implementó el carrito de compras utilizando **React Context ** y el **Localstorage** del navegador.
+Se implementó el carrito de compras utilizando **React Context** y **localstorage** del navegador.
 
 ## Dependencias externas
 
