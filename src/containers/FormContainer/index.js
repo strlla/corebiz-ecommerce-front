@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { sendData } from '../../utils/sendData';
 import Form from '../../components/Form';
 import './style.css';
 
@@ -27,18 +28,29 @@ const FormContainer = () => {
         }
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        if(validateForm()){
+            const res = await sendData(form);
+            if(res.status === 200){
+                setMessage('Sus datos han sido enviados correctamente!')
+            } else {
+                setMessage('Hubo un error, por favor intente nuevamente')
+            }      
+        }
+        console.log(form);
+    }
+
+    const validateForm = () => {
         if(!Object.keys(form).every(k => form[k] !== '')){
             setMessage('Por favor, complete todos los campos');
         } else {
             if(!/.+@.+\.[A-Za-z]+$/.test(form['email'])){
                 setMessage('Por favor, ingrese un email válido');
             } else {
-                setMessage('Formulario enviado con éxito!');
+                return true;
             }
         }
-        console.log(form);
     }
 
     return (
