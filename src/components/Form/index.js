@@ -11,7 +11,7 @@ const Form = ({message, formChecked, handleBlur, handleSubmit, handleKeyUp}) => 
                     <input className="btn-send" type="submit" value="Suscribirme"/>
                 </div>
             </fieldset>
-            <p>{message}</p>
+            <p className="form-message">{message}</p>
         </form>
     )
 }
