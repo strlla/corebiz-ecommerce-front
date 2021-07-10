@@ -3,10 +3,11 @@ import './style.css';
 
 const CartWidget = () => {
     const {size} = useCartContext();
+    
     return (
         <>
          <img className="cart-icon" src="./icons/shopping-cart.svg" alt="icon-cart"/>  
-         <span className="cart-circle">{size}</span> 
+         {size > 0 && <span className="cart-circle">{size}</span>} 
         </>
     )
 }

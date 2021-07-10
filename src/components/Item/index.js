@@ -13,7 +13,7 @@ const Item = ({item}) => {
     
     return (
         <article className="item">
-            <img src={item.imageUrl}/>
+            <img src={item.imageUrl} alt="product-image"/>
             <div className="item-info">
                 <h4>{item.productName}</h4>
                 <Rating starsChecked={item.stars}/>
