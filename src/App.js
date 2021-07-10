@@ -1,7 +1,8 @@
 import {CartProvider} from './contexts/CartContext';
-import Navbar from './components/Navbar';
 import ItemListContainer from './containers/ItemListContainer';
 import FormContainer from './containers/FormContainer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <ItemListContainer/>
       <FormContainer/>
+      <Footer/>
     </CartProvider>
   );
 }

@@ -8,11 +8,16 @@ h1, h2, h3, h4, h5, h6, p, span {
   text-align: center;
 }
 
-input, button, fieldset{
+input, button, fieldset, ul{
   outline: none;
   border: none;
+  padding: 0;
 }
 
 button:hover, input[type="submit"]{
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
 }

@@ -1,0 +1,95 @@
+footer{ 
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    row-gap: 22px;
+    padding: 10px 0;
+}
+
+.footer-col{
+    width: 85%;
+    margin: 0 auto;
+}
+
+footer, .footer-btn-container, .footer-col ul, .footer-credits > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-credits{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col h3 {
+    font-weight: 700;
+    text-align: left;
+    margin: 8px 0;
+}
+
+.footer-col hr{
+    border: 2px solid #FFF;
+    width: 40px;
+    margin: 0;
+}
+
+.footer-col ul, .footer-credits > div{
+    row-gap: 8px;
+}
+
+.footer-col li{
+   font-size: 12px;
+}
+
+.footer-btn-container button{
+    width: 240px;
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 22px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+}
+
+.footer-btn-container button:hover{
+    transform: scale(1.02);
+}
+
+.footer-btn-container button:active{
+    transform: scale(1);
+}
+
+
+.footer-btn-container{
+    row-gap:35px;
+}
+
+.footer-credits span {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 992px) {
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 25px 0;
+    }
+    .footer-col, .footer-btn {
+        margin: auto;
+    }
+    .footer-btn-container button {
+        margin: 0;
+    }
+    .footer-col{
+        width: auto;
+    }
+    .footer-credits{
+        column-gap: 28px;
+    }
+}
