@@ -3,6 +3,7 @@ fieldset legend {
     font-size: 22px;
     color: #333333;
     text-align: left;
+    margin-bottom: 17px;
 }
 
 .btn-send{
@@ -44,6 +45,10 @@ fieldset legend {
     box-shadow: 0 0 0 1px #585858;
 }
 
+.empty-field{
+    box-shadow: 0 0 0 1px #F8475F;
+}
+
 @media only screen and (min-width: 992px) {
     fieldset legend  {
         text-align: center;
@@ -59,6 +64,7 @@ fieldset legend {
 
     .inputs-container input[type="text"]{
         padding: 22px 14px;
+        width: 280px;
     }
     
 }

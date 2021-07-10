@@ -1,24 +1,17 @@
-import {useState} from 'react';
 import './style.css';
 
-const Form = () => {
-    const [form, setForm] = useState({});
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('hoaaaa')
-    }
-
+const Form = ({message, formChecked, handleBlur, handleSubmit, handleKeyUp}) => {
     return (
         <form onSubmit={handleSubmit}>
             <fieldset>
                 <legend>¡Únete a nuestras novedades y promociones!</legend>
                 <div className="inputs-container">
-                    <input  type="text" placeholder="Ingresa tu nombre"/>
-                    <input  type="text" placeholder="Ingresa tu mail"/>
+                    <input className={!formChecked['name'] && 'empty-field'} onKeyUp={(e) => handleKeyUp('name', e)} onBlur={(e)=>handleBlur('name', e)} type="text" placeholder="Ingresa tu nombre"/>
+                    <input className={!formChecked['email'] && 'empty-field'} onKeyUp={(e) => handleKeyUp('email', e)} onBlur={(e)=>handleBlur('email', e)} type="text" placeholder="Ingresa tu mail"/>
                     <input className="btn-send" type="submit" value="Suscribirme"/>
                 </div>
             </fieldset>
+            <p>{message}</p>
         </form>
     )
 }

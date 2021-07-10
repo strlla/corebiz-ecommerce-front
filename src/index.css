@@ -12,3 +12,7 @@ input, button, fieldset{
   outline: none;
   border: none;
 }
+
+button:hover, input[type="submit"]{
+  cursor: pointer;
+}
