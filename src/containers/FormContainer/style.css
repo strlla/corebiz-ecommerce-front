@@ -1,0 +1,10 @@
+.form-container{
+    background-color: #F2F2F2;
+    padding: 12px 27px 26px;
+}
+
+@media only screen and (min-width: 992px) {
+    .form-container{
+        padding: 12px 0 30px;
+    }
+}
