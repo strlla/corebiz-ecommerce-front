@@ -1,8 +1,10 @@
 import {useCartContext} from '../../contexts/CartContext';
+import { addDivToString } from '../../utils/addDivToString';
 import Rating from '../Rating';
 import './style.css';
 
 const Item = ({item}) => {
+
     const {addItem} = useCartContext();
 
     const handleClick = () => {
@@ -13,11 +15,11 @@ const Item = ({item}) => {
         <article className="item">
             <img src={item.imageUrl}/>
             <div className="item-info">
-                <h4>ZAPATO FLOTADOR NEGRO</h4>
+                <h4>{item.productName}</h4>
                 <Rating starsChecked={item.stars}/>
-                <p className="item-price-sec">de $ 399.00n</p>
-                <p className="item-price">por $259.90</p>
-                <p className="item-price-sec">ou em 9x de R$ 28,87</p>
+                <p className="item-price-sec list-price">de ${addDivToString(item.listPrice || 40000)}</p>
+                <p className="item-price">${addDivToString(item.price)}</p>
+                {item.installments.length > 0 && <p className="item-price-sec">ou em {item.installments[0].quantity}x de R${addDivToString(item.installments[0].value)}</p>}
             </div>
             <button onClick={handleClick}>Comprar</button>
             {item.listPrice && <>
